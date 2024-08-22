@@ -48,7 +48,7 @@ janela.geometry("400x550")
 janela.configure(bg="#f0f0f0")
 
 try:
-    icone_path = "C:/Users/DEV_2ano_2024/Documents/GitHub/python-exemplos-basicos/Projetos/Calculadora_trigonometria/seno.png"
+    icone_path = resource_path("seno.png")
     icone = Image.open(icone_path)
     icone = ImageTk.PhotoImage(icone)
     janela.iconphoto(True, icone)
@@ -56,7 +56,7 @@ except FileNotFoundError:
     print("Imagem 'seno.png' não encontrada para o ícone")
 
 try:
-    imagem_path = "C:/Users/DEV_2ano_2024/Documents/GitHub/python-exemplos-basicos/Projetos/Calculadora_trigonometria/seno2.png"
+    imagem_path = resource_path("seno2.png")
     imagem = Image.open(imagem_path)
     imagem = imagem.resize((380, 200), Image.LANCZOS)
     foto = ImageTk.PhotoImage(imagem)
